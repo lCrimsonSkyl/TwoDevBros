@@ -1,0 +1,66 @@
+{
+  "name": "twodevbros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "React.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --env=dev",
+    "bundle": "del /Q dist && del /Q dist.rar && webpack --env=prod --mode=production  && \"%ProgramFiles%\\WinRAR\\Rar.exe\" a -ep1 -idq -r -y \"dist.rar\" \"dist\\\"",
+    "bundle-linux": "rm -rf dist || true && rm dist.zip || true && webpack --env=prod --mode=production && zip -r dist.zip dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@gfx/zopfli": "^1.0.14",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "compression-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
+    "react-hot-loader": "^4.12.13",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "styled-jsx": "^3.2.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.40.2",
+    "webpack-bundle-analyzer": "^3.5.0",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "clsx": "^1.0.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-pose": "^4.0.8",
+    "react-router-dom": "^5.0.1",
+    "react-swipeable-views": "^0.13.3",
+    "wheel-react": "^1.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lCrimsonSkyl/TwoDevBros.git"
+  },
+  "author": "Jonathan & Andres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lCrimsonSkyl/TwoDevBros/issues"
+  },
+  "homepage": "https://github.com/lCrimsonSkyl/TwoDevBros#readme"
+}
